@@ -1,0 +1,51 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timestamp microservice</title>
+    <meta name="description" content="API: Timestamp microservice">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        API: Timestamp Microservice
+      </h1>
+    </header>
+
+    <main>
+      <p>
+      <span class="bold">Usage:</span> https://time-stamp-ramiel.glitch.me/timestamp?time=&lt;Your Time&gt;<br>
+      <span class="bold">Your Time:</span> Can be a unix timestamp (in seconds) or a natural language date.<br>
+      <span class="bold">Returns:</span> { "unix": unix timestamp, "natural": natural language date }<br>
+      </p>
+      <p>
+      <span class="bold">Example:<br></span>
+      
+      <code>https://time-stamp-ramiel.glitch.me/timestamp?time=15 December 2015</code><br>
+      <code>https://time-stamp-ramiel.glitch.me/timestamp?time=1450137600</code><br>
+      Returns: <code>{ "unix": 1450137600, "natural": "15 December 2015" }</code><br>
+      </p>
+      
+    </main>
+
+    <footer>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+
+  </body>
+</html>
